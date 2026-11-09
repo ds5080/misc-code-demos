@@ -8,6 +8,7 @@ n <- 2000
 
 # Causal SNP coded 0/1/2 (copies of the minor allele), MAF 0.3
 snp_causal <- rbinom(n, size = 2, prob = 0.3)
+table(snp_causal)
 
 # Null SNP coded the same way
 snp_null <- rbinom(n, size = 2, prob = 0.3)
